@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Details - Career Sahayak</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/career-profiles.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="../index.html" class="logo">Career Sahayak</a>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="career-test.html">Career Test</a></li>
+                <li><a href="careers.html">Explore Careers</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <div id="career-detail-content"></div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2025 Career Sahayak. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const careerId = parseInt(params.get('id'));
+
+        fetch('../data/careers.json')
+            .then(r => r.json())
+            .then(careers => {
+                const career = careers.find(c => c.id === careerId);
+                if (career) {
+                    document.getElementById('career-detail-content').innerHTML = `
+                        <div class="career-detail-page">
+                            <div class="career-header">
+                                <span class="career-category">${career.category}</span>
+                                <h1>${career.title}</h1>
+                                <p>${career.shortDescription}</p>
+                                <div class="career-stats">
+                                    <div class="stat-item">
+                                        <div class="stat-value">${career.salary}</div>
+                                        <div class="stat-label">Salary Range</div>
+                                    </div>
+                                    <div class="stat-item">
+                                        <div class="stat-value">${career.outlook.split('-')[1]?.trim() || 'Good'}</div>
+                                        <div class="stat-label">Job Growth</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="career-content">
+                                <div class="content-section">
+                                    <h2>About This Career</h2>
+                                    <p>${career.description}</p>
+                                </div>
+                                <div class="content-section">
+                                    <h2>Key Responsibilities</h2>
+                                    <ul>${career.responsibilities.map(r => `<li>${r}</li>`).join('')}</ul>
+                                </div>
+                                <div class="content-section">
+                                    <h2>Required Skills</h2>
+                                    <ul>${career.skills.map(s => `<li>${s}</li>`).join('')}</ul>
+                                </div>
+                                <div class="content-section">
+                                    <h2>Education Requirements</h2>
+                                    <p>${career.education}</p>
+                                </div>
+                                <div class="content-section">
+                                    <h2>Work Environment</h2>
+                                    <p>${career.workEnvironment}</p>
+                                </div>
+                                <div style="text-align: center; margin-top: 2rem;">
+                                    <a href="career-test.html" class="cta-button">Take Career Test</a>
+                                    <a href="careers.html" class="cta-button" style="background: var(--text-dark); margin-left: 1rem;">Browse More Careers</a>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                }
+            });
+    </script>
+</body>
+</html>

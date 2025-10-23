@@ -1,0 +1,152 @@
+﻿[
+  {
+    "id": 1,
+    "question": "What type of environment do you thrive in?",
+    "options": [
+      { "text": "Fast-paced, dynamic office with team collaboration", "weights": { "Technology": 3, "Business": 3, "Marketing": 2 } },
+      { "text": "Quiet, focused workspace for deep concentration", "weights": { "Science": 3, "Engineering": 3, "Technology": 2 } },
+      { "text": "Creative studio with freedom to express ideas", "weights": { "Creative Arts": 4, "Marketing": 2 } },
+      { "text": "Hands-on field work or lab environment", "weights": { "Healthcare": 3, "Science": 3, "Engineering": 2 } }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "Which activity sounds most appealing to you?",
+    "options": [
+      { "text": "Building and coding software applications", "weights": { "Technology": 4, "Engineering": 2 } },
+      { "text": "Analyzing data and creating reports", "weights": { "Business": 3, "Finance": 4, "Science": 2 } },
+      { "text": "Designing visual content or products", "weights": { "Creative Arts": 4, "Marketing": 2 } },
+      { "text": "Helping people solve problems", "weights": { "Healthcare": 4, "Education": 3, "Legal": 2 } }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "What's your preferred way of learning?",
+    "options": [
+      { "text": "Hands-on practice and experimentation", "weights": { "Technology": 3, "Engineering": 3, "Science": 2 } },
+      { "text": "Reading, research, and theoretical study", "weights": { "Science": 3, "Legal": 3, "Finance": 2 } },
+      { "text": "Visual demonstrations and creative projects", "weights": { "Creative Arts": 4, "Marketing": 2 } },
+      { "text": "Interactive discussions and collaboration", "weights": { "Business": 3, "Marketing": 3, "Education": 2 } }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "How do you handle deadlines and pressure?",
+    "options": [
+      { "text": "I thrive under pressure and tight deadlines", "weights": { "Finance": 4, "Marketing": 3, "Business": 2 } },
+      { "text": "I prefer steady, predictable work pace", "weights": { "Science": 3, "Education": 3, "Healthcare": 2 } },
+      { "text": "I work best with flexible, self-set schedules", "weights": { "Creative Arts": 4, "Technology": 2 } },
+      { "text": "I balance urgency with quality systematically", "weights": { "Engineering": 3, "Healthcare": 3, "Legal": 2 } }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "What motivates you most in your work?",
+    "options": [
+      { "text": "Financial success and career advancement", "weights": { "Finance": 4, "Business": 3, "Legal": 2 } },
+      { "text": "Making a positive impact on society", "weights": { "Healthcare": 4, "Education": 3, "Science": 2 } },
+      { "text": "Creative expression and innovation", "weights": { "Creative Arts": 4, "Technology": 3, "Marketing": 2 } },
+      { "text": "Solving complex technical challenges", "weights": { "Technology": 4, "Engineering": 4, "Science": 2 } }
+    ]
+  },
+  {
+    "id": 6,
+    "question": "Which skill set comes most naturally to you?",
+    "options": [
+      { "text": "Logical reasoning and problem-solving", "weights": { "Technology": 4, "Engineering": 3, "Science": 3 } },
+      { "text": "Communication and persuasion", "weights": { "Marketing": 4, "Business": 3, "Legal": 2 } },
+      { "text": "Artistic and creative abilities", "weights": { "Creative Arts": 5, "Marketing": 2 } },
+      { "text": "Empathy and understanding people", "weights": { "Healthcare": 4, "Education": 3, "Business": 2 } }
+    ]
+  },
+  {
+    "id": 7,
+    "question": "What type of work-life balance appeals to you?",
+    "options": [
+      { "text": "9-5 with clear separation between work and personal time", "weights": { "Business": 3, "Education": 3, "Finance": 2 } },
+      { "text": "Flexible hours with remote work options", "weights": { "Technology": 4, "Marketing": 3, "Creative Arts": 2 } },
+      { "text": "Project-based with varying schedules", "weights": { "Creative Arts": 3, "Engineering": 3, "Business": 2 } },
+      { "text": "I don't mind irregular hours if work is fulfilling", "weights": { "Healthcare": 3, "Legal": 3, "Finance": 2 } }
+    ]
+  },
+  {
+    "id": 8,
+    "question": "How do you approach problem-solving?",
+    "options": [
+      { "text": "Through systematic analysis and data", "weights": { "Science": 4, "Engineering": 3, "Finance": 3 } },
+      { "text": "Creative brainstorming and innovative thinking", "weights": { "Creative Arts": 4, "Technology": 3, "Marketing": 2 } },
+      { "text": "Collaborative discussion with others", "weights": { "Business": 3, "Marketing": 3, "Education": 2 } },
+      { "text": "Research-based evidence and best practices", "weights": { "Healthcare": 3, "Legal": 3, "Science": 3 } }
+    ]
+  },
+  {
+    "id": 9,
+    "question": "What role do you naturally take in group projects?",
+    "options": [
+      { "text": "Leader who delegates and coordinates", "weights": { "Business": 4, "Marketing": 3, "Finance": 2 } },
+      { "text": "Technical expert who implements solutions", "weights": { "Technology": 4, "Engineering": 4, "Science": 2 } },
+      { "text": "Creative visionary who generates ideas", "weights": { "Creative Arts": 4, "Marketing": 3, "Business": 2 } },
+      { "text": "Supportive team player who helps others", "weights": { "Healthcare": 3, "Education": 4, "Business": 2 } }
+    ]
+  },
+  {
+    "id": 10,
+    "question": "Which subject interested you most in school?",
+    "options": [
+      { "text": "Mathematics and Physics", "weights": { "Engineering": 4, "Technology": 3, "Science": 3, "Finance": 2 } },
+      { "text": "Biology and Chemistry", "weights": { "Healthcare": 4, "Science": 4, "Engineering": 2 } },
+      { "text": "Arts, Design, and Literature", "weights": { "Creative Arts": 5, "Marketing": 2 } },
+      { "text": "Economics and Social Sciences", "weights": { "Business": 4, "Finance": 3, "Legal": 2 } }
+    ]
+  },
+  {
+    "id": 11,
+    "question": "How do you feel about continuous learning and upskilling?",
+    "options": [
+      { "text": "Excited! I love learning new technologies", "weights": { "Technology": 4, "Science": 3, "Engineering": 2 } },
+      { "text": "Important for career growth, I'm committed", "weights": { "Business": 3, "Finance": 3, "Healthcare": 2 } },
+      { "text": "Prefer mastering existing skills deeply", "weights": { "Creative Arts": 3, "Legal": 3, "Education": 2 } },
+      { "text": "Essential, I naturally stay updated", "weights": { "Technology": 3, "Marketing": 3, "Science": 2 } }
+    ]
+  },
+  {
+    "id": 12,
+    "question": "What's your ideal work project?",
+    "options": [
+      { "text": "Developing cutting-edge technology", "weights": { "Technology": 5, "Engineering": 3 } },
+      { "text": "Creating impactful marketing campaigns", "weights": { "Marketing": 5, "Creative Arts": 2, "Business": 2 } },
+      { "text": "Conducting groundbreaking research", "weights": { "Science": 5, "Healthcare": 2 } },
+      { "text": "Building large-scale infrastructure", "weights": { "Engineering": 5, "Business": 2 } }
+    ]
+  },
+  {
+    "id": 13,
+    "question": "How comfortable are you with public speaking?",
+    "options": [
+      { "text": "Very comfortable, I enjoy presenting", "weights": { "Marketing": 4, "Business": 3, "Education": 3, "Legal": 2 } },
+      { "text": "Manageable for professional settings", "weights": { "Business": 3, "Healthcare": 2, "Finance": 2 } },
+      { "text": "Prefer written communication", "weights": { "Technology": 3, "Science": 3, "Creative Arts": 2 } },
+      { "text": "Not my strength, prefer behind-the-scenes work", "weights": { "Technology": 4, "Engineering": 3, "Science": 2 } }
+    ]
+  },
+  {
+    "id": 14,
+    "question": "What type of impact do you want to make?",
+    "options": [
+      { "text": "Improve people's health and wellbeing", "weights": { "Healthcare": 5, "Science": 2 } },
+      { "text": "Drive business growth and innovation", "weights": { "Business": 4, "Finance": 3, "Technology": 2 } },
+      { "text": "Create memorable experiences and content", "weights": { "Creative Arts": 4, "Marketing": 3 } },
+      { "text": "Advance scientific knowledge", "weights": { "Science": 5, "Engineering": 2, "Technology": 2 } }
+    ]
+  },
+  {
+    "id": 15,
+    "question": "Which work environment sounds ideal?",
+    "options": [
+      { "text": "Modern tech office with gaming zones", "weights": { "Technology": 4, "Marketing": 2, "Creative Arts": 2 } },
+      { "text": "Corporate headquarters with formal setting", "weights": { "Finance": 4, "Legal": 3, "Business": 3 } },
+      { "text": "Hospital or clinic helping patients", "weights": { "Healthcare": 5 } },
+      { "text": "Research lab or innovation center", "weights": { "Science": 4, "Engineering": 3, "Technology": 2 } }
+    ]
+  }
+]

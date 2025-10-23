@@ -1,0 +1,468 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Assessment Test - Career Sahayak</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/chatbot.css">
+    <style>
+        /* Ensure proper scroll padding for sticky header */
+        html {
+            scroll-padding-top: 120px;
+        }
+
+        body {
+            padding-top: 0;
+        }
+
+        .career-test-hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 4rem 2rem;
+            border-radius: 24px;
+            margin: 2rem auto;
+            max-width: 1200px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .career-test-hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px);
+            background-size: 50px 50px;
+            animation: float 20s linear infinite;
+        }
+
+        @keyframes float {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(50px, 50px); }
+        }
+
+        .career-test-hero > * {
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-icon {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            animation: bounce 2s ease-in-out infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+
+        .career-test-hero h1 {
+            font-size: 3rem;
+            font-weight: 900;
+            margin-bottom: 1rem;
+            color: white;
+        }
+
+        .career-test-hero p {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+            color: rgba(255, 255, 255, 0.95);
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .test-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin: 3rem auto;
+            max-width: 1200px;
+            padding: 0 2rem;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 16px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 24px rgba(37, 99, 235, 0.2);
+            border-color: #2563eb;
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            display: inline-block;
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+
+        .feature-card h3 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 0.75rem;
+            color: #111827;
+        }
+
+        .feature-card p {
+            color: #6b7280;
+            line-height: 1.6;
+        }
+
+        .info-box {
+            background: linear-gradient(135deg, rgba(37, 99, 235, 0.1) 0%, rgba(139, 92, 246, 0.1) 100%);
+            padding: 2rem;
+            border-radius: 16px;
+            margin: 3rem auto;
+            max-width: 800px;
+            border-left: 4px solid #2563eb;
+        }
+
+        .info-box h3 {
+            color: #2563eb;
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .info-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .info-list li {
+            padding: 1rem 0;
+            border-bottom: 1px solid rgba(37, 99, 235, 0.2);
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            font-size: 1.05rem;
+        }
+
+        .info-list li:last-child {
+            border-bottom: none;
+        }
+
+        .check-icon {
+            color: #10b981;
+            font-size: 1.5rem;
+        }
+
+        .cta-section {
+            text-align: center;
+            padding: 3rem 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .start-test-btn {
+            padding: 1.25rem 3rem;
+            background: linear-gradient(135deg, #2563eb 0%, #8b5cf6 100%);
+            color: white;
+            border: none;
+            border-radius: 12px;
+            font-size: 1.25rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 25px rgba(37, 99, 235, 0.3);
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .start-test-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 35px rgba(37, 99, 235, 0.4);
+        }
+
+        .privacy-note {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            margin-top: 1.5rem;
+            color: #6b7280;
+            font-size: 0.95rem;
+        }
+
+        .stats-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin: 3rem auto;
+            max-width: 1000px;
+            padding: 0 2rem;
+        }
+
+        .stat-card {
+            text-align: center;
+            padding: 2rem;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 900;
+            background: linear-gradient(135deg, #2563eb 0%, #8b5cf6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .stat-label {
+            color: #6b7280;
+            font-size: 1rem;
+            margin-top: 0.5rem;
+        }
+
+        .visually-hidden {
+            display: none !important;
+        }
+
+        /* Test container with proper spacing */
+        #career-test-container {
+            position: relative;
+            z-index: 50;
+            margin-top: 3rem;
+            padding-top: 2rem;
+        }
+
+        /* When test is active, ensure enough top spacing */
+        #career-test-container.active {
+            margin-top: 100px;
+            padding-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../index.html">Career Sahayak</a>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="career-test.html" class="active">Career Test</a></li>
+                <li><a href="../index.html#careers">Explore Careers</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main style="padding: 2rem; min-height: 100vh;">
+        <!-- Hero Section -->
+        <div class="career-test-hero" id="hero-section">
+            <div class="hero-icon">🎯</div>
+            <h1>Discover Your Ideal Career Path</h1>
+            <p>Take our comprehensive career assessment to find careers that match your interests, skills, and personality. Get personalized recommendations in just 5-7 minutes.</p>
+        </div>
+
+        <!-- Stats Section -->
+        <div class="stats-section" id="stats-section">
+            <div class="stat-card">
+                <div class="stat-number">15</div>
+                <div class="stat-label">Expert Questions</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">88+</div>
+                <div class="stat-label">Career Options</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">5-7</div>
+                <div class="stat-label">Minutes</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">100%</div>
+                <div class="stat-label">Free & Private</div>
+            </div>
+        </div>
+
+        <!-- Features Grid -->
+        <div class="test-features" id="features-section">
+            <div class="feature-card">
+                <div class="feature-icon">📊</div>
+                <h3>Personalized Matches</h3>
+                <p>Get career recommendations tailored to your unique profile, interests, and strengths.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🎓</div>
+                <h3>Detailed Insights</h3>
+                <p>Receive comprehensive information about salary ranges, required skills, and education paths.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🚀</div>
+                <h3>Instant Results</h3>
+                <p>Get immediate career matches with percentage compatibility for each recommendation.</p>
+            </div>
+        </div>
+
+        <!-- What You'll Get -->
+        <div class="info-box" id="info-section">
+            <h3>✨ What You'll Discover</h3>
+            <ul class="info-list">
+                <li>
+                    <span class="check-icon">✓</span>
+                    <span><strong>Top Career Matches:</strong> Personalized recommendations based on your responses</span>
+                </li>
+                <li>
+                    <span class="check-icon">✓</span>
+                    <span><strong>Match Percentages:</strong> See how well each career aligns with your profile</span>
+                </li>
+                <li>
+                    <span class="check-icon">✓</span>
+                    <span><strong>Career Categories:</strong> Explore different fields that suit your interests</span>
+                </li>
+                <li>
+                    <span class="check-icon">✓</span>
+                    <span><strong>Detailed Information:</strong> Learn about salary, growth prospects, and requirements</span>
+                </li>
+                <li>
+                    <span class="check-icon">✓</span>
+                    <span><strong>Next Steps:</strong> Get guidance on skills to develop and courses to take</span>
+                </li>
+            </ul>
+        </div>
+
+        <!-- CTA Section -->
+        <div class="cta-section" id="cta-section">
+            <button class="start-test-btn" id="main-start-btn">
+                Start Career Test →
+            </button>
+            <div class="privacy-note">
+                <span>🔒</span>
+                <span>Your responses are 100% private and used only for career matching</span>
+            </div>
+        </div>
+
+        <!-- Test Container (will be populated by JavaScript) -->
+        <div id="career-test-container"></div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Career Sahayak</h3>
+                <p>Your trusted partner in career guidance and exploration.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="career-test.html">Career Test</a></li>
+                    <li><a href="../index.html#careers">Explore Careers</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>Email: info@careersahayak.com</p>
+                <p>Phone: +91 1234567890</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Career Sahayak. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+    // Complete fix for header visibility and scroll behavior
+    document.addEventListener('DOMContentLoaded', () => {
+        const mainBtn = document.getElementById('main-start-btn');
+        
+        if (mainBtn) {
+            mainBtn.addEventListener('click', startCareerTest);
+        }
+
+        // Remove any duplicate buttons that might be injected
+        setTimeout(() => {
+            document.querySelectorAll('a, button').forEach(el => {
+                if (el.id === 'main-start-btn') return;
+                const text = (el.textContent || '').trim().toLowerCase();
+                if (text.includes('start career test') || text === 'start test') {
+                    if (el !== mainBtn) el.remove();
+                }
+            });
+        }, 500);
+    });
+
+    function startCareerTest() {
+        console.log('Starting career test...');
+        
+        const container = document.getElementById('career-test-container');
+        if (!container) {
+            console.error('Container not found');
+            return;
+        }
+
+        // Hide all welcome sections
+        const sectionsToHide = [
+            'hero-section',
+            'stats-section', 
+            'features-section',
+            'info-section',
+            'cta-section'
+        ];
+
+        sectionsToHide.forEach(id => {
+            const element = document.getElementById(id);
+            if (element) {
+                element.style.display = 'none';
+            }
+        });
+
+        // Show and prepare container
+        container.style.display = 'block';
+        container.classList.add('active');
+
+        // Get header height dynamically
+        const header = document.querySelector('header');
+        const headerHeight = header ? header.offsetHeight : 70;
+
+        // Scroll to top of main content area (below header)
+        const scrollTarget = document.querySelector('main');
+        if (scrollTarget) {
+            const targetPosition = scrollTarget.offsetTop - headerHeight - 20;
+            window.scrollTo({
+                top: targetPosition,
+                behavior: 'smooth'
+            });
+        }
+
+        // Start the test after scroll completes
+        setTimeout(() => {
+            if (window.CareerTest && typeof window.CareerTest.startTest === 'function') {
+                window.CareerTest.startTest();
+            } else {
+                console.error('CareerTest not loaded');
+            }
+        }, 500);
+    }
+
+    // Make function globally available
+    window.startCareerTest = startCareerTest;
+    </script>
+
+    <script src="../js/app.js"></script>
+    <script src="../js/career-test.js"></script>
+    <script src="../js/chatbot.js"></script>
+</body>
+</html>

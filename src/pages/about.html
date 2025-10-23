@@ -1,0 +1,553 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Career Sahayak</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/chatbot.css">
+    <style>
+        /* About Page Specific Styles */
+        .about-hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 5rem 2rem;
+            border-radius: 24px;
+            margin: 2rem auto;
+            max-width: 1200px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .about-hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px);
+            background-size: 50px 50px;
+            animation: float 20s linear infinite;
+        }
+
+        @keyframes float {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(50px, 50px); }
+        }
+
+        .about-hero > * {
+            position: relative;
+            z-index: 1;
+        }
+
+        .about-hero h1 {
+            font-size: 3.5rem;
+            font-weight: 900;
+            margin-bottom: 1.5rem;
+            color: white;
+        }
+
+        .about-hero p {
+            font-size: 1.5rem;
+            color: rgba(255, 255, 255, 0.95);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .content-section {
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 0 2rem;
+        }
+
+        .mission-vision {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 3rem;
+            margin: 4rem 0;
+        }
+
+        .mission-card, .vision-card {
+            background: white;
+            padding: 3rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .mission-card::before, .vision-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 6px;
+            background: linear-gradient(90deg, #2563eb, #8b5cf6);
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+
+        .mission-card:hover, .vision-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(37, 99, 235, 0.2);
+            border-color: #2563eb;
+        }
+
+        .mission-card:hover::before, .vision-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .card-icon {
+            font-size: 4rem;
+            margin-bottom: 1.5rem;
+            display: inline-block;
+            animation: bounce 2s ease-in-out infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+
+        .card-title {
+            font-size: 2rem;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, #2563eb 0%, #8b5cf6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .card-text {
+            color: #6b7280;
+            line-height: 1.8;
+            font-size: 1.125rem;
+        }
+
+        .values-section {
+            background: linear-gradient(135deg, rgba(37, 99, 235, 0.05) 0%, rgba(139, 92, 246, 0.05) 100%);
+            padding: 4rem 2rem;
+            border-radius: 24px;
+            margin: 4rem 0;
+        }
+
+        .section-title {
+            font-size: 3rem;
+            font-weight: 900;
+            text-align: center;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #2563eb 0%, #8b5cf6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.25rem;
+            color: #6b7280;
+            margin-bottom: 3rem;
+        }
+
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .value-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 16px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .value-card:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 12px 24px rgba(37, 99, 235, 0.2);
+        }
+
+        .value-icon {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            display: inline-block;
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+
+        .value-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: #111827;
+        }
+
+        .value-description {
+            color: #6b7280;
+            line-height: 1.7;
+            font-size: 1.05rem;
+        }
+
+        .team-section {
+            margin: 5rem 0;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2.5rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .team-member {
+            background: white;
+            padding: 2rem;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .team-member::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #2563eb, #8b5cf6);
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+
+        .team-member:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(37, 99, 235, 0.2);
+        }
+
+        .team-member:hover::before {
+            transform: scaleX(1);
+        }
+
+        .member-avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #2563eb 0%, #8b5cf6 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            margin: 0 auto 1.5rem;
+            box-shadow: 0 8px 16px rgba(37, 99, 235, 0.3);
+        }
+
+        .member-name {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: #111827;
+        }
+
+        .member-role {
+            color: #2563eb;
+            font-weight: 600;
+            font-size: 1.05rem;
+            margin-bottom: 1rem;
+        }
+
+        .member-bio {
+            color: #6b7280;
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+
+        .stats-section {
+            background: white;
+            padding: 4rem 2rem;
+            border-radius: 24px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            margin: 4rem 0;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 3rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 4rem;
+            font-weight: 900;
+            background: linear-gradient(135deg, #2563eb 0%, #8b5cf6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            color: #6b7280;
+            font-size: 1.125rem;
+            font-weight: 600;
+        }
+
+        .cta-section {
+            background: linear-gradient(135deg, #2563eb 0%, #8b5cf6 100%);
+            padding: 4rem 2rem;
+            border-radius: 24px;
+            text-align: center;
+            color: white;
+            margin: 4rem 0;
+        }
+
+        .cta-section h2 {
+            font-size: 2.5rem;
+            font-weight: 900;
+            margin-bottom: 1rem;
+            color: white;
+        }
+
+        .cta-section p {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+            color: rgba(255, 255, 255, 0.95);
+        }
+
+        .cta-button {
+            padding: 1.25rem 3rem;
+            background: white;
+            color: #2563eb;
+            border: none;
+            border-radius: 12px;
+            font-size: 1.25rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../index.html">Career Sahayak</a>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="career-test.html">Career Test</a></li>
+                <li><a href="../index.html#careers">Explore Careers</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main style="padding: 2rem;">
+        <!-- Hero Section -->
+        <div class="about-hero">
+            <h1>About Career Sahayak</h1>
+            <p>Empowering students and professionals to make informed career decisions through personalized guidance and comprehensive resources</p>
+        </div>
+
+        <!-- Mission & Vision -->
+        <div class="content-section">
+            <div class="mission-vision">
+                <div class="mission-card">
+                    <div class="card-icon">🎯</div>
+                    <h2 class="card-title">Our Mission</h2>
+                    <p class="card-text">
+                        Career Sahayak is dedicated to providing comprehensive career guidance and resources to help individuals discover their ideal career paths. We believe that everyone deserves access to quality career information and personalized assessments that can shape their future success.
+                    </p>
+                </div>
+
+                <div class="vision-card">
+                    <div class="card-icon">🚀</div>
+                    <h2 class="card-title">Our Vision</h2>
+                    <p class="card-text">
+                        Through our platform, we aim to bridge the gap between education and employment by offering detailed insights into various career options, required skills, salary expectations, and growth prospects. We envision a world where career decisions are data-driven and personalized.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Stats Section -->
+        <div class="content-section">
+            <div class="stats-section">
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-number">88+</div>
+                        <div class="stat-label">Career Options</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">15</div>
+                        <div class="stat-label">Assessment Questions</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">10K+</div>
+                        <div class="stat-label">Students Helped</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Free Access</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Values Section -->
+        <div class="values-section">
+            <h2 class="section-title">Our Core Values</h2>
+            <p class="section-subtitle">The principles that guide everything we do</p>
+            
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-icon">💡</div>
+                    <h3 class="value-title">Innovation</h3>
+                    <p class="value-description">Constantly evolving our platform with cutting-edge technology and fresh insights to deliver the best career guidance.</p>
+                </div>
+
+                <div class="value-card">
+                    <div class="value-icon">🤝</div>
+                    <h3 class="value-title">Accessibility</h3>
+                    <p class="value-description">Making quality career guidance available to everyone, regardless of their background or circumstances.</p>
+                </div>
+
+                <div class="value-card">
+                    <div class="value-icon">🎓</div>
+                    <h3 class="value-title">Excellence</h3>
+                    <p class="value-description">Committed to providing accurate, comprehensive, and up-to-date career information and assessments.</p>
+                </div>
+
+                <div class="value-card">
+                    <div class="value-icon">🔒</div>
+                    <h3 class="value-title">Privacy</h3>
+                    <p class="value-description">Your data and responses are completely private and secure. We never share your personal information.</p>
+                </div>
+
+                <div class="value-card">
+                    <div class="value-icon">⚡</div>
+                    <h3 class="value-title">Efficiency</h3>
+                    <p class="value-description">Quick and effective career matching that saves you time while providing comprehensive insights.</p>
+                </div>
+
+                <div class="value-card">
+                    <div class="value-icon">🌟</div>
+                    <h3 class="value-title">Empowerment</h3>
+                    <p class="value-description">Giving you the tools and knowledge to make confident, informed decisions about your career path.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Team Section -->
+        <div class="content-section team-section">
+            <h2 class="section-title">Meet Our Team</h2>
+            <p class="section-subtitle">Passionate individuals dedicated to your career success</p>
+            
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-avatar">👨‍💼</div>
+                    <h3 class="member-name">Ronak Kumar</h3>
+                    <p class="member-role">Founder & Lead Developer</p>
+                    <p class="member-bio">Passionate about helping students find their perfect career path through technology and data-driven insights.</p>
+                </div>
+
+                <div class="team-member">
+                    <div class="member-avatar">👨‍💻</div>
+                    <h3 class="member-name">Abhay Tiwary</h3>
+                    <p class="member-role">Full Stack Developer</p>
+                    <p class="member-bio">Building innovative solutions to make career guidance accessible and effective for everyone.</p>
+                </div>
+
+                <div class="team-member">
+                    <div class="member-avatar">👨‍🏫</div>
+                    <h3 class="member-name">Shiv Prakash Upadhyay</h3>
+                    <p class="member-role">Career Counselor</p>
+                    <p class="member-bio">Expert in career guidance with extensive experience helping students achieve their professional goals.</p>
+                </div>
+
+                <div class="team-member">
+                    <div class="member-avatar">👨‍🔬</div>
+                    <h3 class="member-name">Devasya Kachru</h3>
+                    <p class="member-role">Data Analyst</p>
+                    <p class="member-bio">Analyzing career trends and market data to provide accurate, up-to-date career recommendations.</p>
+                </div>
+
+                <div class="team-member">
+                    <div class="member-avatar">👩‍🎨</div>
+                    <h3 class="member-name">Adrija Pramanik</h3>
+                    <p class="member-role">UX Designer</p>
+                    <p class="member-bio">Creating beautiful, intuitive experiences that make career exploration engaging and enjoyable.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- CTA Section -->
+        <div class="content-section">
+            <div class="cta-section">
+                <h2>Ready to Discover Your Ideal Career?</h2>
+                <p>Take our comprehensive career assessment and get personalized recommendations in just 5-7 minutes</p>
+                <a href="career-test.html" class="cta-button">Start Career Test →</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Career Sahayak</h3>
+                <p>Your trusted partner in career guidance and exploration.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="career-test.html">Career Test</a></li>
+                    <li><a href="../index.html#careers">Explore Careers</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>Email: info@careersahayak.com</p>
+                <p>Phone: +91 9204853082</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Career Sahayak. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../js/app.js"></script>
+    <script src="../js/chatbot.js"></script>
+</body>
+</html>

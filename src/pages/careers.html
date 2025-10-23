@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Careers - Career Sahayak</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/career-profiles.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="../index.html" class="logo">Career Sahayak</a>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="career-test.html">Career Test</a></li>
+                <li><a href="careers.html">Explore Careers</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="careers-header">
+            <h1>Explore Career Paths</h1>
+            <p>Browse through hundreds of career profiles</p>
+        </div>
+
+        <div class="search-filter-section">
+            <div class="search-bar">
+                <input type="text" id="career-search" class="search-input" placeholder="Search careers...">
+            </div>
+            <div class="filters" id="category-filters"></div>
+        </div>
+
+        <div class="careers-grid container">
+            <div id="careers-list"></div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2025 Career Sahayak. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        let allCareers = [];
+        let filteredCareers = [];
+
+        fetch('../data/careers.json')
+            .then(r => r.json())
+            .then(careers => {
+                allCareers = careers;
+                filteredCareers = careers;
+                displayCareers(careers);
+                setupFilters(careers);
+                setupSearch();
+            });
+
+        function displayCareers(careers) {
+            document.getElementById('careers-list').innerHTML = careers.map(career => `
+                <div class="career-card" onclick="window.location.href='career-detail.html?id=${career.id}'">
+                    <span class="career-category">${career.category}</span>
+                    <h3>${career.title}</h3>
+                    <p>${career.shortDescription}</p>
+                    <div class="career-salary">₹${career.salary}</div>
+                    <div class="career-outlook">${career.outlook}</div>
+                </div>
+            `).join('');
+        }
+
+        function setupFilters(careers) {
+            const categories = ['all', ...new Set(careers.map(c => c.category))];
+            document.getElementById('category-filters').innerHTML = categories.map(cat => 
+                `<button class="filter-btn ${cat === 'all' ? 'active' : ''}" onclick="filterByCategory('${cat}')">
+                    ${cat.charAt(0).toUpperCase() + cat.slice(1)}
+                </button>`
+            ).join('');
+        }
+
+        function filterByCategory(category) {
+            document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+            filteredCareers = category === 'all' ? allCareers : allCareers.filter(c => c.category === category);
+            displayCareers(filteredCareers);
+        }
+
+        function setupSearch() {
+            document.getElementById('career-search').addEventListener('input', (e) => {
+                const query = e.target.value.toLowerCase();
+                const results = allCareers.filter(career => 
+                    career.title.toLowerCase().includes(query) ||
+                    career.category.toLowerCase().includes(query) ||
+                    career.description.toLowerCase().includes(query)
+                );
+                displayCareers(results);
+            });
+        }
+    </script>
+</body>
+</html>

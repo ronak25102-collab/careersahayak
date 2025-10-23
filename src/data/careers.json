@@ -1,0 +1,961 @@
+﻿[
+    {
+        "responsibilities":  "Design and develop software applications, write clean and maintainable code, debug and troubleshoot issues, collaborate with cross-functional teams, participate in code reviews, and stay updated with latest technologies.",
+        "shortDescription":  "Responsible for designing, coding, and maintaining software applications. Creates innovative solutions to solve complex problems.",
+        "id":  "software-developer",
+        "workEnvironment":  "Typically office-based or remote. Flexible working hours common in many companies. Mix of independent work and team collaboration.",
+        "skills":  [
+                       "JavaScript",
+                       "Python",
+                       "Java",
+                       "Problem Solving",
+                       "Git",
+                       "Databases",
+                       "APIs",
+                       "Testing"
+                   ],
+        "education":  "Bachelor\u0027s degree in Computer Science, Software Engineering, or related field. Certifications in specific technologies are beneficial.",
+        "category":  "Technology",
+        "description":  "Software Developers are the creative minds behind computer programs. They design, develop, test, and maintain software applications that run on various platforms. This role involves working with programming languages, frameworks, and tools to create functional and efficient software solutions. Developers collaborate with teams to understand user requirements and translate them into technical specifications.",
+        "growth":  "Excellent growth - High demand globally",
+        "salary":  "₹4,00,000 - ₹25,00,000 per year",
+        "title":  "Software Developer"
+    },
+    {
+        "responsibilities":  "Collect and clean data, build predictive models, perform statistical analysis, create data visualizations, communicate findings to stakeholders, and develop machine learning algorithms.",
+        "shortDescription":  "Analyzes and interprets complex data to help organizations make informed decisions using statistical methods and machine learning.",
+        "id":  "data-scientist",
+        "workEnvironment":  "Office or remote work. Collaborative environment working with business teams, engineers, and stakeholders. Mix of analytical work and presentations.",
+        "skills":  [
+                       "Python",
+                       "R",
+                       "Machine Learning",
+                       "SQL",
+                       "Statistics",
+                       "Data Visualization",
+                       "TensorFlow",
+                       "Pandas",
+                       "Deep Learning"
+                   ],
+        "education":  "Bachelor\u0027s or Master\u0027s degree in Data Science, Statistics, Computer Science, or related field. Advanced degrees preferred for senior roles.",
+        "category":  "Technology",
+        "description":  "Data Scientists extract insights from large datasets using statistical analysis, machine learning, and data visualization techniques. They work with big data technologies to solve business problems, predict trends, and support data-driven decision making. This role combines programming skills, statistical knowledge, and business acumen to turn data into actionable insights.",
+        "growth":  "Exceptional growth - One of fastest growing fields",
+        "salary":  "₹6,00,000 - ₹30,00,000 per year",
+        "title":  "Data Scientist"
+    },
+    {
+        "responsibilities":  "Design website layouts and interfaces, create mockups and prototypes, optimize designs for different devices, collaborate with developers, ensure brand consistency, and stay current with design trends.",
+        "shortDescription":  "Creates visually appealing and user-friendly websites that provide excellent user experience across all devices.",
+        "id":  "web-designer",
+        "workEnvironment":  "Office, remote, or freelance work. Creative environment with collaboration between designers, developers, and marketing teams.",
+        "skills":  [
+                       "HTML",
+                       "CSS",
+                       "JavaScript",
+                       "Adobe XD",
+                       "Figma",
+                       "Photoshop",
+                       "UI/UX Design",
+                       "Responsive Design",
+                       "Typography"
+                   ],
+        "education":  "Bachelor\u0027s degree in Graphic Design, Web Design, or related field. Strong portfolio often more important than formal education.",
+        "category":  "Technology",
+        "description":  "Web Designers are responsible for creating the visual aspects of websites. They combine creativity with technical skills to design layouts, choose color schemes, select fonts, and create graphics that enhance user experience. They work closely with developers to ensure designs are implemented correctly and maintain brand consistency across digital platforms.",
+        "growth":  "Strong growth - Increasing demand for digital presence",
+        "salary":  "₹3,00,000 - ₹12,00,000 per year",
+        "title":  "Web Designer"
+    },
+    {
+        "responsibilities":  "Define project scope and objectives, create project plans, allocate resources, manage budgets, monitor progress, mitigate risks, and communicate with stakeholders.",
+        "shortDescription":  "Oversees projects from inception to completion, ensuring they are completed on time, within budget, and meet quality standards.",
+        "id":  "project-manager",
+        "workEnvironment":  "Office-based with potential for remote work. Regular meetings with teams and stakeholders. Dynamic environment requiring adaptability.",
+        "skills":  [
+                       "Leadership",
+                       "Communication",
+                       "Risk Management",
+                       "Agile/Scrum",
+                       "Budgeting",
+                       "MS Project",
+                       "Problem Solving",
+                       "Stakeholder Management"
+                   ],
+        "education":  "Bachelor\u0027s degree in Business, Management, or related field. PMP, PRINCE2, or Agile certifications highly valuable.",
+        "category":  "Business",
+        "description":  "Project Managers are responsible for planning, executing, and closing projects successfully. They coordinate team members, manage resources, handle budgets, communicate with stakeholders, and ensure project goals are met. This role requires strong leadership, organizational, and problem-solving skills to navigate challenges and deliver results.",
+        "growth":  "Very good growth - Essential role in all industries",
+        "salary":  "₹6,00,000 - ₹25,00,000 per year",
+        "title":  "Project Manager"
+    },
+    {
+        "responsibilities":  "Develop marketing strategies, manage social media accounts, create content, run paid advertising campaigns, analyze performance metrics, optimize campaigns, and report on ROI.",
+        "shortDescription":  "Develops and implements online marketing strategies to promote products, services, and brands across digital channels.",
+        "id":  "digital-marketing-specialist",
+        "workEnvironment":  "Office or remote work. Fast-paced environment requiring creativity and data analysis. Collaboration with creative and sales teams.",
+        "skills":  [
+                       "SEO",
+                       "SEM",
+                       "Social Media Marketing",
+                       "Google Analytics",
+                       "Content Marketing",
+                       "Email Marketing",
+                       "PPC",
+                       "Copywriting"
+                   ],
+        "education":  "Bachelor\u0027s degree in Marketing, Communications, or related field. Digital marketing certifications (Google Ads, HubSpot) are advantageous.",
+        "category":  "Marketing",
+        "description":  "Digital Marketing Specialists create and execute marketing campaigns across various digital platforms including social media, email, search engines, and websites. They analyze data to optimize campaigns, engage with audiences, create content, and measure ROI. This role combines creativity with analytical skills to drive brand awareness and customer acquisition.",
+        "growth":  "Excellent growth - Digital transformation driving demand",
+        "salary":  "₹3,50,000 - ₹15,00,000 per year",
+        "title":  "Digital Marketing Specialist"
+    },
+    {
+        "responsibilities":  [
+                                 "Design and develop blockchain solutions",
+                                 "Write and deploy smart contracts",
+                                 "Implement consensus algorithms",
+                                 "Ensure security and scalability",
+                                 "Integrate blockchain with existing systems"
+                             ],
+        "shortDescription":  "Design and implement blockchain-based applications and smart contracts",
+        "id":  59,
+        "workEnvironment":  "Tech companies, startups, financial institutions - mostly remote or hybrid",
+        "skills":  [
+                       "Solidity",
+                       "Ethereum",
+                       "Smart Contracts",
+                       "Cryptography",
+                       "Web3.js",
+                       "Node.js",
+                       "DApp Development",
+                       "Hyperledger"
+                   ],
+        "education":  "Bachelor\u0027s in Computer Science or related field, blockchain certifications preferred",
+        "category":  "Technology",
+        "description":  "Blockchain Developers create decentralized applications, design blockchain protocols, and implement smart contracts. They work with distributed ledger technology to build secure, transparent systems for various industries including finance, supply chain, and healthcare.",
+        "salary":  "₹8,00,000 - ₹25,00,000 per year",
+        "outlook":  "Excellent - 35% growth expected",
+        "title":  "Blockchain Developer"
+    },
+    {
+        "responsibilities":  [
+                                 "Build and maintain CI/CD pipelines",
+                                 "Manage cloud infrastructure",
+                                 "Automate deployment processes",
+                                 "Monitor system performance",
+                                 "Implement security best practices"
+                             ],
+        "shortDescription":  "Bridge development and operations to improve deployment efficiency",
+        "id":  60,
+        "workEnvironment":  "Tech companies, IT departments - office and remote work",
+        "skills":  [
+                       "Docker",
+                       "Kubernetes",
+                       "Jenkins",
+                       "AWS/Azure",
+                       "CI/CD",
+                       "Linux",
+                       "Python",
+                       "Terraform",
+                       "Git",
+                       "Ansible"
+                   ],
+        "education":  "Bachelor\u0027s in Computer Science or IT",
+        "category":  "Technology",
+        "description":  "DevOps Engineers automate and streamline software development processes, manage infrastructure, and ensure continuous integration and deployment. They work to improve collaboration between development and operations teams.",
+        "salary":  "₹6,00,000 - ₹20,00,000 per year",
+        "outlook":  "Excellent - 28% growth expected",
+        "title":  "DevOps Engineer"
+    },
+    {
+        "responsibilities":  [
+                                 "Conduct psychological assessments",
+                                 "Provide individual and group therapy",
+                                 "Develop treatment plans",
+                                 "Maintain patient records",
+                                 "Collaborate with other healthcare professionals"
+                             ],
+        "shortDescription":  "Diagnose and treat mental, emotional, and behavioral disorders",
+        "id":  61,
+        "workEnvironment":  "Hospitals, clinics, schools, private practice",
+        "skills":  [
+                       "Psychotherapy",
+                       "CBT",
+                       "Assessment Tools",
+                       "Research Methods",
+                       "Counseling",
+                       "Empathy",
+                       "Communication",
+                       "Ethics"
+                   ],
+        "education":  "M.Phil or PhD in Clinical Psychology, RCI registration required",
+        "category":  "Healthcare",
+        "description":  "Clinical Psychologists assess, diagnose, and treat psychological disorders. They provide therapy, conduct research, and work in various settings including hospitals, clinics, and private practice.",
+        "salary":  "₹4,00,000 - ₹12,00,000 per year",
+        "outlook":  "Very Good - 18% growth expected",
+        "title":  "Clinical Psychologist"
+    },
+    {
+        "responsibilities":  [
+                                 "Consult with clients on design needs",
+                                 "Create design concepts and presentations",
+                                 "Select furniture and materials",
+                                 "Coordinate with contractors",
+                                 "Manage project budgets and timelines"
+                             ],
+        "shortDescription":  "Create functional and aesthetically pleasing interior spaces",
+        "id":  62,
+        "workEnvironment":  "Design firms, architectural offices, freelance - site visits required",
+        "skills":  [
+                       "AutoCAD",
+                       "3D Max",
+                       "SketchUp",
+                       "Space Planning",
+                       "Color Theory",
+                       "Material Knowledge",
+                       "Client Relations",
+                       "Budgeting"
+                   ],
+        "education":  "Bachelor\u0027s in Interior Design or Architecture",
+        "category":  "Creative Arts",
+        "description":  "Interior Designers plan and design interior spaces for residential, commercial, and institutional clients. They combine creativity with technical knowledge to enhance functionality and aesthetics.",
+        "salary":  "₹3,00,000 - ₹10,00,000 per year",
+        "outlook":  "Good - 12% growth expected",
+        "title":  "Interior Designer"
+    },
+    {
+        "responsibilities":  [
+                                 "Structure financial deals",
+                                 "Conduct financial analysis and modeling",
+                                 "Prepare pitch books and presentations",
+                                 "Manage client relationships",
+                                 "Execute transactions"
+                             ],
+        "shortDescription":  "Provide financial advisory services for mergers, acquisitions, and fundraising",
+        "id":  63,
+        "workEnvironment":  "Investment banks, financial institutions - long hours, high stress",
+        "skills":  [
+                       "Financial Modeling",
+                       "Valuation",
+                       "Excel",
+                       "PowerPoint",
+                       "M\u0026A Analysis",
+                       "Due Diligence",
+                       "Networking",
+                       "Negotiation"
+                   ],
+        "education":  "MBA in Finance, CFA preferred",
+        "category":  "Finance",
+        "description":  "Investment Bankers help companies raise capital, facilitate mergers and acquisitions, and provide strategic financial advice. They work in high-pressure environments with significant financial impact.",
+        "salary":  "₹8,00,000 - ₹30,00,000+ per year",
+        "outlook":  "Good - 10% growth expected",
+        "title":  "Investment Banker"
+    },
+    {
+        "responsibilities":  [
+                                 "Design robotic systems",
+                                 "Develop control algorithms",
+                                 "Test and debug robots",
+                                 "Integrate sensors and actuators",
+                                 "Optimize robot performance"
+                             ],
+        "shortDescription":  "Design, build, and program robots for various applications",
+        "id":  64,
+        "workEnvironment":  "Manufacturing, tech companies, research labs",
+        "skills":  [
+                       "ROS",
+                       "Python",
+                       "C++",
+                       "CAD",
+                       "Control Systems",
+                       "Machine Learning",
+                       "Sensors",
+                       "Kinematics",
+                       "Computer Vision"
+                   ],
+        "education":  "Bachelor\u0027s in Robotics, Mechatronics, or related engineering field",
+        "category":  "Engineering",
+        "description":  "Robotics Engineers develop automated systems and robots for manufacturing, healthcare, defense, and consumer applications. They combine mechanical, electrical, and software engineering.",
+        "salary":  "₹5,00,000 - ₹18,00,000 per year",
+        "outlook":  "Excellent - 25% growth expected",
+        "title":  "Robotics Engineer"
+    },
+    {
+        "responsibilities":  [
+                                 "Create design concepts and sketches",
+                                 "Select fabrics and materials",
+                                 "Oversee sample creation",
+                                 "Present collections",
+                                 "Coordinate with manufacturers"
+                             ],
+        "shortDescription":  "Create original clothing and accessory designs",
+        "id":  65,
+        "workEnvironment":  "Fashion houses, design studios, freelance - fast-paced, deadline-driven",
+        "skills":  [
+                       "Sketching",
+                       "Pattern Making",
+                       "Sewing",
+                       "Adobe Illustrator",
+                       "Fabric Knowledge",
+                       "Trend Forecasting",
+                       "Color Theory",
+                       "CAD"
+                   ],
+        "education":  "Bachelor\u0027s in Fashion Design or related field",
+        "category":  "Creative Arts",
+        "description":  "Fashion Designers conceptualize and create clothing, footwear, and accessories. They stay current with trends, work with manufacturers, and may specialize in haute couture, ready-to-wear, or mass market fashion.",
+        "salary":  "₹3,00,000 - ₹15,00,000 per year",
+        "outlook":  "Moderate - 8% growth expected",
+        "title":  "Fashion Designer"
+    },
+    {
+        "responsibilities":  [
+                                 "Conduct pharmaceutical research",
+                                 "Develop drug formulations",
+                                 "Perform stability studies",
+                                 "Analyze test results",
+                                 "Ensure regulatory compliance"
+                             ],
+        "shortDescription":  "Research and develop new drugs and medications",
+        "id":  66,
+        "workEnvironment":  "Pharmaceutical companies, research institutions, laboratories",
+        "skills":  [
+                       "Drug Formulation",
+                       "Analytical Chemistry",
+                       "Clinical Trials",
+                       "Quality Control",
+                       "Research Methodology",
+                       "Lab Techniques",
+                       "Data Analysis"
+                   ],
+        "education":  "Master\u0027s or PhD in Pharmaceutical Sciences, Pharmacology, or Chemistry",
+        "category":  "Healthcare",
+        "description":  "Pharmaceutical Scientists conduct research to develop new medications, improve existing drugs, and ensure drug safety and efficacy. They work in laboratories conducting experiments and clinical trials.",
+        "salary":  "₹4,50,000 - ₹15,00,000 per year",
+        "outlook":  "Very Good - 16% growth expected",
+        "title":  "Pharmaceutical Scientist"
+    },
+    {
+        "responsibilities":  [
+                                 "Conduct keyword research",
+                                 "Optimize website content",
+                                 "Build quality backlinks",
+                                 "Monitor search rankings",
+                                 "Generate SEO reports"
+                             ],
+        "shortDescription":  "Optimize websites to improve search engine rankings",
+        "id":  67,
+        "workEnvironment":  "Digital agencies, marketing departments, freelance - remote friendly",
+        "skills":  [
+                       "Google Analytics",
+                       "SEO Tools",
+                       "Keyword Research",
+                       "Link Building",
+                       "Content Strategy",
+                       "HTML/CSS",
+                       "Technical SEO",
+                       "SEM"
+                   ],
+        "education":  "Bachelor\u0027s in Marketing, IT, or related field; SEO certifications beneficial",
+        "category":  "Marketing",
+        "description":  "SEO Specialists analyze, review, and implement changes to websites to optimize for search engines. They work to increase organic traffic and improve website visibility in search results.",
+        "salary":  "₹3,50,000 - ₹12,00,000 per year",
+        "outlook":  "Excellent - 22% growth expected",
+        "title":  "SEO Specialist"
+    },
+    {
+        "responsibilities":  [
+                                 "Prepare and audit financial statements",
+                                 "Manage tax planning and compliance",
+                                 "Provide financial advisory",
+                                 "Conduct internal audits",
+                                 "Ensure regulatory compliance"
+                             ],
+        "shortDescription":  "Provide accounting, auditing, and financial advisory services",
+        "id":  68,
+        "workEnvironment":  "Accounting firms, corporate finance departments, consultancy",
+        "skills":  [
+                       "Accounting",
+                       "Taxation",
+                       "Auditing",
+                       "Financial Analysis",
+                       "Tally/SAP",
+                       "GST",
+                       "Excel",
+                       "Report Writing",
+                       "Compliance"
+                   ],
+        "education":  "CA qualification from ICAI",
+        "category":  "Finance",
+        "description":  "Chartered Accountants manage financial records, conduct audits, ensure tax compliance, and provide strategic financial advice to individuals and organizations.",
+        "salary":  "₹6,00,000 - ₹25,00,000+ per year",
+        "outlook":  "Very Good - 15% growth expected",
+        "title":  "Chartered Accountant (CA)"
+    },
+    {
+        "responsibilities":  [
+                                 "Design pollution control systems",
+                                 "Conduct environmental impact assessments",
+                                 "Develop waste management plans",
+                                 "Ensure environmental compliance",
+                                 "Monitor environmental quality"
+                             ],
+        "shortDescription":  "Develop solutions to environmental problems",
+        "id":  69,
+        "workEnvironment":  "Consulting firms, government agencies, industrial plants",
+        "skills":  [
+                       "Environmental Modeling",
+                       "Water Treatment",
+                       "Waste Management",
+                       "AutoCAD",
+                       "GIS",
+                       "Sustainability",
+                       "Regulatory Knowledge",
+                       "Project Management"
+                   ],
+        "education":  "Bachelor\u0027s in Environmental Engineering or related field",
+        "category":  "Engineering",
+        "description":  "Environmental Engineers work on projects related to waste disposal, pollution control, water treatment, and environmental sustainability. They design systems to protect public health and the environment.",
+        "salary":  "₹4,00,000 - ₹14,00,000 per year",
+        "outlook":  "Good - 13% growth expected",
+        "title":  "Environmental Engineer"
+    },
+    {
+        "responsibilities":  [
+                                 "Develop game concepts and mechanics",
+                                 "Create level designs",
+                                 "Write design documentation",
+                                 "Balance gameplay elements",
+                                 "Collaborate with development team"
+                             ],
+        "shortDescription":  "Create concepts and mechanics for video games",
+        "id":  70,
+        "workEnvironment":  "Game studios, tech companies - creative and collaborative",
+        "skills":  [
+                       "Unity",
+                       "Unreal Engine",
+                       "C#",
+                       "Game Mechanics",
+                       "Level Design",
+                       "Storytelling",
+                       "3D Modeling",
+                       "Scripting",
+                       "Prototyping"
+                   ],
+        "education":  "Bachelor\u0027s in Game Design, Computer Science, or related field",
+        "category":  "Creative Arts",
+        "description":  "Video Game Designers develop game concepts, storylines, characters, and gameplay mechanics. They work closely with programmers and artists to bring interactive entertainment experiences to life.",
+        "salary":  "₹4,00,000 - ₹15,00,000 per year",
+        "outlook":  "Excellent - 20% growth expected",
+        "title":  "Video Game Designer"
+    },
+    {
+        "responsibilities":  [
+                                 "Examine and diagnose animals",
+                                 "Perform surgeries and treatments",
+                                 "Prescribe medications",
+                                 "Advise on animal care",
+                                 "Maintain medical records"
+                             ],
+        "shortDescription":  "Diagnose and treat diseases and injuries in animals",
+        "id":  71,
+        "workEnvironment":  "Veterinary clinics, animal hospitals, farms, zoos",
+        "skills":  [
+                       "Animal Anatomy",
+                       "Surgery",
+                       "Diagnostics",
+                       "Pharmacology",
+                       "Communication",
+                       "Compassion",
+                       "Emergency Care",
+                       "X-ray Interpretation"
+                   ],
+        "education":  "Bachelor of Veterinary Science (BVSc) degree",
+        "category":  "Healthcare",
+        "description":  "Veterinarians provide medical care to animals, perform surgeries, prescribe medications, and advise pet owners on animal care. They may specialize in companion animals, livestock, or exotic animals.",
+        "salary":  "₹4,50,000 - ₹12,00,000 per year",
+        "outlook":  "Good - 14% growth expected",
+        "title":  "Veterinarian"
+    },
+    {
+        "responsibilities":  [
+                                 "Develop mobile applications",
+                                 "Design user interfaces",
+                                 "Integrate APIs and databases",
+                                 "Test and debug apps",
+                                 "Publish to app stores"
+                             ],
+        "shortDescription":  "Create applications for mobile devices",
+        "id":  72,
+        "workEnvironment":  "Tech companies, app development agencies, freelance",
+        "skills":  [
+                       "Swift",
+                       "Kotlin",
+                       "React Native",
+                       "Flutter",
+                       "iOS/Android SDK",
+                       "REST APIs",
+                       "UI/UX",
+                       "Git",
+                       "Firebase",
+                       "App Store Optimization"
+                   ],
+        "education":  "Bachelor\u0027s in Computer Science or related field",
+        "category":  "Technology",
+        "description":  "Mobile App Developers design and build applications for iOS and Android platforms. They work on user interfaces, functionality, and ensure apps meet performance and security standards.",
+        "salary":  "₹4,50,000 - ₹18,00,000 per year",
+        "outlook":  "Excellent - 30% growth expected",
+        "title":  "Mobile App Developer"
+    },
+    {
+        "responsibilities":  [
+                                 "Design structural plans",
+                                 "Conduct site surveys",
+                                 "Supervise construction",
+                                 "Ensure safety compliance",
+                                 "Manage project budgets"
+                             ],
+        "shortDescription":  "Design and oversee construction of infrastructure projects",
+        "id":  73,
+        "workEnvironment":  "Construction sites, engineering firms, government agencies",
+        "skills":  [
+                       "AutoCAD",
+                       "Structural Analysis",
+                       "Project Management",
+                       "Site Supervision",
+                       "Surveying",
+                       "Cost Estimation",
+                       "Building Codes",
+                       "Construction Management"
+                   ],
+        "education":  "Bachelor\u0027s in Civil Engineering",
+        "category":  "Engineering",
+        "description":  "Civil Engineers plan, design, and supervise construction of buildings, roads, bridges, dams, and other infrastructure. They ensure projects meet safety standards and regulations.",
+        "salary":  "₹3,50,000 - ₹12,00,000 per year",
+        "outlook":  "Good - 11% growth expected",
+        "title":  "Civil Engineer"
+    },
+    {
+        "responsibilities":  [
+                                 "Research and write content",
+                                 "Edit and proofread copy",
+                                 "Optimize for search engines",
+                                 "Meet deadlines",
+                                 "Collaborate with marketing team"
+                             ],
+        "shortDescription":  "Create engaging written content for various platforms",
+        "id":  74,
+        "workEnvironment":  "Media companies, marketing agencies, freelance - remote friendly",
+        "skills":  [
+                       "Creative Writing",
+                       "SEO Writing",
+                       "Research",
+                       "Editing",
+                       "Proofreading",
+                       "Content Management Systems",
+                       "Social Media",
+                       "AP Style"
+                   ],
+        "education":  "Bachelor\u0027s in English, Journalism, Communications, or related field",
+        "category":  "Marketing",
+        "description":  "Content Writers produce articles, blog posts, website copy, and marketing materials. They research topics, write compelling content, and optimize for SEO to engage target audiences.",
+        "salary":  "₹2,50,000 - ₹8,00,000 per year",
+        "outlook":  "Very Good - 19% growth expected",
+        "title":  "Content Writer"
+    },
+    {
+        "responsibilities":  [
+                                 "Monitor network security",
+                                 "Configure firewalls and VPNs",
+                                 "Conduct security assessments",
+                                 "Respond to security incidents",
+                                 "Implement security policies"
+                             ],
+        "shortDescription":  "Protect computer networks from cyber threats",
+        "id":  75,
+        "workEnvironment":  "IT companies, banks, cybersecurity firms - critical role",
+        "skills":  [
+                       "Firewall Management",
+                       "IDS/IPS",
+                       "Penetration Testing",
+                       "Network Protocols",
+                       "Encryption",
+                       "Security Auditing",
+                       "Incident Response",
+                       "SIEM Tools"
+                   ],
+        "education":  "Bachelor\u0027s in Cybersecurity, IT, or Computer Science; Security certifications (CISSP, CEH)",
+        "category":  "Technology",
+        "description":  "Network Security Engineers design and implement security measures to protect organizational networks from cyber attacks. They monitor for threats, respond to incidents, and ensure network integrity.",
+        "salary":  "₹6,00,000 - ₹20,00,000 per year",
+        "outlook":  "Excellent - 33% growth expected",
+        "title":  "Network Security Engineer"
+    },
+    {
+        "responsibilities":  [
+                                 "Create architectural designs",
+                                 "Prepare construction documents",
+                                 "Coordinate with contractors",
+                                 "Ensure building code compliance",
+                                 "Oversee construction progress"
+                             ],
+        "shortDescription":  "Design buildings and oversee construction projects",
+        "id":  76,
+        "workEnvironment":  "Architectural firms, construction companies, self-employed",
+        "skills":  [
+                       "AutoCAD",
+                       "Revit",
+                       "3D Modeling",
+                       "Building Design",
+                       "Space Planning",
+                       "Construction Knowledge",
+                       "Project Management",
+                       "Building Codes"
+                   ],
+        "education":  "Bachelor\u0027s in Architecture (B.Arch), Council of Architecture registration",
+        "category":  "Engineering",
+        "description":  "Architects plan and design buildings and structures, considering aesthetics, functionality, safety, and sustainability. They work with clients, engineers, and contractors throughout the construction process.",
+        "salary":  "₹4,00,000 - ₹15,00,000 per year",
+        "outlook":  "Good - 9% growth expected",
+        "title":  "Architect"
+    },
+    {
+        "responsibilities":  [
+                                 "Conduct biotechnology research",
+                                 "Develop new products and processes",
+                                 "Perform laboratory experiments",
+                                 "Analyze research data",
+                                 "Write scientific reports"
+                             ],
+        "shortDescription":  "Apply biological processes to develop products and technologies",
+        "id":  77,
+        "workEnvironment":  "Research labs, pharmaceutical companies, agricultural firms",
+        "skills":  [
+                       "Molecular Biology",
+                       "Genetic Engineering",
+                       "Cell Culture",
+                       "PCR",
+                       "Chromatography",
+                       "Data Analysis",
+                       "Lab Techniques",
+                       "Research Methodology"
+                   ],
+        "education":  "Master\u0027s or PhD in Biotechnology or related field",
+        "category":  "Science",
+        "description":  "Biotechnologists use living organisms and biological processes to develop products in healthcare, agriculture, and environmental sectors. They conduct research and work in laboratories.",
+        "salary":  "₹3,50,000 - ₹12,00,000 per year",
+        "outlook":  "Very Good - 17% growth expected",
+        "title":  "Biotechnologist"
+    },
+    {
+        "responsibilities":  [
+                                 "Develop HR strategies",
+                                 "Manage recruitment processes",
+                                 "Handle employee relations",
+                                 "Ensure labor law compliance",
+                                 "Oversee training programs"
+                             ],
+        "shortDescription":  "Manage employee relations and organizational development",
+        "id":  78,
+        "workEnvironment":  "Corporate offices across all industries",
+        "skills":  [
+                       "Recruitment",
+                       "Performance Management",
+                       "Labor Laws",
+                       "HRIS",
+                       "Conflict Resolution",
+                       "Training \u0026 Development",
+                       "Compensation Planning",
+                       "Employee Relations"
+                   ],
+        "education":  "Bachelor\u0027s/Master\u0027s in HR, MBA preferred",
+        "category":  "Business",
+        "description":  "HR Managers oversee recruitment, training, employee relations, compensation, and benefits. They develop policies, ensure compliance, and create strategies to attract and retain talent.",
+        "salary":  "₹5,00,000 - ₹18,00,000 per year",
+        "outlook":  "Good - 12% growth expected",
+        "title":  "Human Resources Manager"
+    },
+    {
+        "responsibilities":  [
+                                 "Develop new food products",
+                                 "Test food quality and safety",
+                                 "Improve food processing methods",
+                                 "Ensure regulatory compliance",
+                                 "Conduct sensory evaluations"
+                             ],
+        "shortDescription":  "Develop and improve food products and processing methods",
+        "id":  79,
+        "workEnvironment":  "Food processing companies, research labs, quality control departments",
+        "skills":  [
+                       "Food Chemistry",
+                       "Microbiology",
+                       "Quality Control",
+                       "Product Development",
+                       "Food Safety",
+                       "Sensory Analysis",
+                       "Packaging",
+                       "HACCP"
+                   ],
+        "education":  "Bachelor\u0027s/Master\u0027s in Food Technology or Food Science",
+        "category":  "Science",
+        "description":  "Food Technologists research and develop new food products, improve existing ones, and ensure food safety and quality. They work on product formulation, packaging, and shelf life.",
+        "salary":  "₹3,00,000 - ₹10,00,000 per year",
+        "outlook":  "Good - 11% growth expected",
+        "title":  "Food Technologist"
+    },
+    {
+        "responsibilities":  [
+                                 "Set up recording equipment",
+                                 "Mix and edit audio tracks",
+                                 "Ensure sound quality",
+                                 "Collaborate with artists/directors",
+                                 "Manage audio equipment"
+                             ],
+        "shortDescription":  "Record, mix, and produce audio for various media",
+        "id":  80,
+        "workEnvironment":  "Recording studios, film production, live events, broadcasting",
+        "skills":  [
+                       "Pro Tools",
+                       "Audio Mixing",
+                       "Sound Design",
+                       "Recording",
+                       "Acoustics",
+                       "Music Theory",
+                       "Live Sound",
+                       "Mastering",
+                       "DAWs"
+                   ],
+        "education":  "Diploma/Bachelor\u0027s in Audio Engineering or Music Production",
+        "category":  "Creative Arts",
+        "description":  "Sound Engineers work with recording equipment to capture, mix, and produce audio for music, film, television, and live events. They balance sound levels and ensure high-quality audio output.",
+        "salary":  "₹3,00,000 - ₹12,00,000 per year",
+        "outlook":  "Good - 10% growth expected",
+        "title":  "Sound Engineer"
+    },
+    {
+        "responsibilities":  [
+                                 "Design electrical systems",
+                                 "Test equipment and systems",
+                                 "Solve technical problems",
+                                 "Ensure safety standards",
+                                 "Prepare technical documentation"
+                             ],
+        "shortDescription":  "Design and develop electrical systems and equipment",
+        "id":  81,
+        "workEnvironment":  "Manufacturing, power plants, construction, consulting firms",
+        "skills":  [
+                       "Circuit Design",
+                       "AutoCAD",
+                       "MATLAB",
+                       "PLC Programming",
+                       "Power Systems",
+                       "Electronics",
+                       "Control Systems",
+                       "Troubleshooting"
+                   ],
+        "education":  "Bachelor\u0027s in Electrical Engineering",
+        "category":  "Engineering",
+        "description":  "Electrical Engineers design, develop, test, and supervise electrical equipment and systems. They work on power generation, electronics, telecommunications, and control systems.",
+        "salary":  "₹3,50,000 - ₹12,00,000 per year",
+        "outlook":  "Good - 10% growth expected",
+        "title":  "Electrical Engineer"
+    },
+    {
+        "responsibilities":  [
+                                 "Develop social media strategy",
+                                 "Create engaging content",
+                                 "Manage multiple platforms",
+                                 "Analyze campaign performance",
+                                 "Engage with online community"
+                             ],
+        "shortDescription":  "Manage and grow brand presence on social media platforms",
+        "id":  82,
+        "workEnvironment":  "Marketing agencies, corporate marketing departments, freelance",
+        "skills":  [
+                       "Content Creation",
+                       "Social Media Analytics",
+                       "Copywriting",
+                       "Community Management",
+                       "Paid Advertising",
+                       "Canva",
+                       "Hootsuite",
+                       "Strategy"
+                   ],
+        "education":  "Bachelor\u0027s in Marketing, Communications, or related field",
+        "category":  "Marketing",
+        "description":  "Social Media Managers create content strategies, manage social media accounts, engage with audiences, and analyze performance metrics to build brand awareness and community engagement.",
+        "salary":  "₹3,50,000 - ₹12,00,000 per year",
+        "outlook":  "Excellent - 26% growth expected",
+        "title":  "Social Media Manager"
+    },
+    {
+        "responsibilities":  [
+                                 "Fly and navigate aircraft",
+                                 "Conduct pre-flight checks",
+                                 "Monitor weather conditions",
+                                 "Ensure passenger safety",
+                                 "Maintain flight logs"
+                             ],
+        "shortDescription":  "Operate aircraft to transport passengers and cargo",
+        "id":  83,
+        "workEnvironment":  "Airlines, charter companies, cargo operations - irregular hours, travel",
+        "skills":  [
+                       "Aircraft Operations",
+                       "Navigation",
+                       "Weather Analysis",
+                       "Communication",
+                       "Decision Making",
+                       "Emergency Procedures",
+                       "Instrument Flying",
+                       "Multi-engine Rating"
+                   ],
+        "education":  "Commercial Pilot License (CPL), DGCA certification",
+        "category":  "Transportation",
+        "description":  "Commercial Pilots fly airplanes and helicopters to transport passengers, cargo, or for other purposes. They must maintain licenses, follow safety protocols, and make quick decisions.",
+        "salary":  "₹6,00,000 - ₹50,00,000+ per year",
+        "outlook":  "Very Good - 15% growth expected",
+        "title":  "Aviation Pilot"
+    },
+    {
+        "responsibilities":  [
+                                 "Assess patient needs",
+                                 "Develop treatment plans",
+                                 "Teach therapeutic activities",
+                                 "Monitor patient progress",
+                                 "Educate families and caregivers"
+                             ],
+        "shortDescription":  "Help patients develop, recover, and improve daily living skills",
+        "id":  84,
+        "workEnvironment":  "Hospitals, rehabilitation centers, schools, home healthcare",
+        "skills":  [
+                       "Patient Assessment",
+                       "Therapeutic Techniques",
+                       "Activity Analysis",
+                       "Rehabilitation",
+                       "Communication",
+                       "Empathy",
+                       "Documentation",
+                       "Adaptive Equipment"
+                   ],
+        "education":  "Bachelor\u0027s/Master\u0027s in Occupational Therapy",
+        "category":  "Healthcare",
+        "description":  "Occupational Therapists work with people of all ages to help them perform daily activities through therapeutic techniques. They treat physical, mental, developmental, and emotional conditions.",
+        "salary":  "₹3,00,000 - ₹9,00,000 per year",
+        "outlook":  "Very Good - 18% growth expected",
+        "title":  "Occupational Therapist"
+    },
+    {
+        "responsibilities":  [
+                                 "Draft patent applications",
+                                 "Conduct patent searches",
+                                 "Prosecute patent applications",
+                                 "Provide IP strategy advice",
+                                 "Handle patent disputes"
+                             ],
+        "shortDescription":  "Specialize in intellectual property law and patent applications",
+        "id":  85,
+        "workEnvironment":  "Law firms, corporate legal departments, patent offices",
+        "skills":  [
+                       "Patent Law",
+                       "Technical Writing",
+                       "Research",
+                       "Prosecution",
+                       "IP Strategy",
+                       "Client Counseling",
+                       "Litigation",
+                       "Patent Search"
+                   ],
+        "education":  "Law degree (LLB) + Technical degree; Patent agent registration",
+        "category":  "Legal",
+        "description":  "Patent Attorneys help inventors and companies protect their intellectual property through patents. They have both legal and technical expertise to navigate patent law and prosecution.",
+        "salary":  "₹6,00,000 - ₹25,00,000+ per year",
+        "outlook":  "Good - 12% growth expected",
+        "title":  "Patent Attorney"
+    },
+    {
+        "responsibilities":  [
+                                 "Design renewable energy systems",
+                                 "Conduct feasibility studies",
+                                 "Optimize energy efficiency",
+                                 "Manage installation projects",
+                                 "Monitor system performance"
+                             ],
+        "shortDescription":  "Develop sustainable energy solutions using renewable sources",
+        "id":  86,
+        "workEnvironment":  "Energy companies, consulting firms, government agencies",
+        "skills":  [
+                       "Solar/Wind Technology",
+                       "Energy Modeling",
+                       "AutoCAD",
+                       "Project Management",
+                       "Sustainability",
+                       "Grid Integration",
+                       "Energy Storage",
+                       "System Design"
+                   ],
+        "education":  "Bachelor\u0027s in Renewable Energy Engineering or related field",
+        "category":  "Engineering",
+        "description":  "Renewable Energy Engineers design and implement systems that generate power from renewable sources like solar, wind, and hydro. They work on sustainability projects and energy efficiency.",
+        "salary":  "₹4,50,000 - ₹15,00,000 per year",
+        "outlook":  "Excellent - 27% growth expected",
+        "title":  "Renewable Energy Engineer"
+    },
+    {
+        "responsibilities":  [
+                                 "Plan event concepts and themes",
+                                 "Coordinate with vendors",
+                                 "Manage event budgets",
+                                 "Oversee event execution",
+                                 "Handle on-site logistics"
+                             ],
+        "shortDescription":  "Plan and execute events, conferences, and special occasions",
+        "id":  87,
+        "workEnvironment":  "Event companies, hotels, corporate, self-employed - irregular hours",
+        "skills":  [
+                       "Project Management",
+                       "Budgeting",
+                       "Vendor Management",
+                       "Negotiation",
+                       "Marketing",
+                       "Time Management",
+                       "Crisis Management",
+                       "Creativity"
+                   ],
+        "education":  "Bachelor\u0027s in Event Management, Hospitality, or related field",
+        "category":  "Business",
+        "description":  "Event Managers coordinate all aspects of events from conception to completion. They handle logistics, vendors, budgets, and ensure events run smoothly and meet client objectives.",
+        "salary":  "₹3,00,000 - ₹12,00,000 per year",
+        "outlook":  "Good - 11% growth expected",
+        "title":  "Event Manager"
+    },
+    {
+        "responsibilities":  [
+                                 "Conduct agricultural research",
+                                 "Develop improved crop varieties",
+                                 "Test soil and plant samples",
+                                 "Advise on farming practices",
+                                 "Publish research findings"
+                             ],
+        "shortDescription":  "Research and develop improved farming techniques and crop production",
+        "id":  88,
+        "workEnvironment":  "Research institutions, agricultural companies, government agencies, farms",
+        "skills":  [
+                       "Crop Science",
+                       "Soil Analysis",
+                       "Research Methodology",
+                       "Data Analysis",
+                       "Laboratory Techniques",
+                       "Field Work",
+                       "Sustainability",
+                       "Biotechnology"
+                   ],
+        "education":  "Master\u0027s/PhD in Agricultural Science or related field",
+        "category":  "Science",
+        "description":  "Agricultural Scientists conduct research to improve crop yields, soil quality, and farming methods. They work on sustainable agriculture, pest control, and food production innovations.",
+        "salary":  "₹3,50,000 - ₹10,00,000 per year",
+        "outlook":  "Good - 9% growth expected",
+        "title":  "Agricultural Scientist"
+    }
+]

@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.career-profile {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.career-profile h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.career-profile p {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.career-profile .requirements {
+    list-style-type: none;
+    padding: 0;
+}
+
+.career-profile .requirements li {
+    background: #e9ecef;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+.career-profile .apply-button {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.career-profile .apply-button:hover {
+    background-color: #0056b3;
+}
